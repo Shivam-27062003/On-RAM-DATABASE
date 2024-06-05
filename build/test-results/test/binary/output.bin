@@ -1,0 +1,583 @@
+ Loading file: film_category.csv
+Done writing file
+
+Loading file: country.csv
+Done writing file
+
+Loading file: address.csv
+Done writing file
+
+Loading file: city.csv
+Done writing file
+
+Loading file: film_actor.csv
+Done writing file
+
+Loading file: language.csv
+Done writing file
+
+Loading file: staff.csv
+Done writing file
+
+Loading file: film.csv
+Done writing file
+
+Loading file: store.csv
+Done writing file
+
+Loading file: inventory.csv
+Done writing file
+
+Loading file: rental.csv
+Done writing file
+
+Loading file: actor.csv
+Done writing file
+
+Loading file: payment.csv
+Done writing file
+
+Loading file: category.csv
+Done writing file
+
+Loading file: customer.csv
+Done writing file
+
+Done loading files
+
+Creating index on actor_id...
+
+[+] Parsed SQL: 
+	SELECT *
+FROM `ACTOR`
+WHERE `ACTOR_ID` >= 100
+
+[+] Validated SQL: 
+\SELECT `actor`.`actor_id`, `actor`.`first_name`, `actor`.`last_name`, `actor`.`last_update`
+"FROM `FILM_DB`.`actor` AS `ACTOR`
+ WHERE `actor`.`actor_id` >= 100
+
+[+] Converted SQL: 
+=rel#4:LogicalProject.NONE(input=LogicalFilter#2,inputs=0..3)
+
+[+] Physical SQL: 
+PIndexScan
+
+[+] Evaluating physical SQL
+'Evaluating PIndexScan for table: actor
+>=($0, 100)
+
+Test 1 SFW passed :)
+
+ Loading file: film_category.csv
+Done writing file
+
+Loading file: country.csv
+Done writing file
+
+Loading file: address.csv
+Done writing file
+
+Loading file: city.csv
+Done writing file
+
+Loading file: film_actor.csv
+Done writing file
+
+Loading file: language.csv
+Done writing file
+
+Loading file: staff.csv
+Done writing file
+
+Loading file: film.csv
+Done writing file
+
+Loading file: store.csv
+Done writing file
+
+Loading file: inventory.csv
+Done writing file
+
+Loading file: rental.csv
+Done writing file
+
+Loading file: actor.csv
+Done writing file
+
+Loading file: payment.csv
+Done writing file
+
+Loading file: category.csv
+Done writing file
+
+Loading file: customer.csv
+Done writing file
+
+Done loading files
+
+!Creating index on customer_id...
+
+[+] Parsed SQL: 
+	SELECT *
+FROM `CUSTOMER`
+WHERE `CUSTOMER_ID` <= 50
+
+[+] Validated SQL: 
+÷SELECT `customer`.`customer_id`, `customer`.`store_id`, `customer`.`first_name`, `customer`.`last_name`, `customer`.`email`, `customer`.`address_id`, `customer`.`activebool`, `customer`.`create_date`, `customer`.`last_update`, `customer`.`active`
+(FROM `FILM_DB`.`customer` AS `CUSTOMER`
+%WHERE `customer`.`customer_id` <= 50
+
+[+] Converted SQL: 
+?rel#17:LogicalProject.NONE(input=LogicalFilter#15,inputs=0..9)
+
+[+] Physical SQL: 
+PIndexScan
+
+[+] Evaluating physical SQL
+*Evaluating PIndexScan for table: customer
+<=($0, 50)
+==50
+
+Test 2 SFW passed :)
+
+ Loading file: film_category.csv
+Done writing file
+
+Loading file: country.csv
+Done writing file
+
+Loading file: address.csv
+Done writing file
+
+Loading file: city.csv
+Done writing file
+
+Loading file: film_actor.csv
+Done writing file
+
+Loading file: language.csv
+Done writing file
+
+Loading file: staff.csv
+Done writing file
+
+Loading file: film.csv
+Done writing file
+
+Loading file: store.csv
+Done writing file
+
+Loading file: inventory.csv
+Done writing file
+
+Loading file: rental.csv
+Done writing file
+
+Loading file: actor.csv
+Done writing file
+
+Loading file: payment.csv
+Done writing file
+
+Loading file: category.csv
+Done writing file
+
+Loading file: customer.csv
+Done writing file
+
+Done loading files
+
+Creating index on actor_id...
+
+[+] Parsed SQL: 
+	SELECT *
+FROM `ACTOR`
+WHERE `ACTOR_ID` > 100
+
+[+] Validated SQL: 
+\SELECT `actor`.`actor_id`, `actor`.`first_name`, `actor`.`last_name`, `actor`.`last_update`
+"FROM `FILM_DB`.`actor` AS `ACTOR`
+WHERE `actor`.`actor_id` > 100
+
+[+] Converted SQL: 
+?rel#30:LogicalProject.NONE(input=LogicalFilter#28,inputs=0..3)
+
+[+] Physical SQL: 
+PIndexScan
+
+[+] Evaluating physical SQL
+'Evaluating PIndexScan for table: actor
+>($0, 100)
+
+Test 3 SFW passed :)
+
+ Loading file: film_category.csv
+Done writing file
+
+Loading file: country.csv
+Done writing file
+
+Loading file: address.csv
+Done writing file
+
+Loading file: city.csv
+Done writing file
+
+Loading file: film_actor.csv
+Done writing file
+
+Loading file: language.csv
+Done writing file
+
+Loading file: staff.csv
+Done writing file
+
+Loading file: film.csv
+Done writing file
+
+Loading file: store.csv
+Done writing file
+
+Loading file: inventory.csv
+Done writing file
+
+Loading file: rental.csv
+Done writing file
+
+Loading file: actor.csv
+Done writing file
+
+Loading file: payment.csv
+Done writing file
+
+Loading file: category.csv
+Done writing file
+
+Loading file: customer.csv
+Done writing file
+
+Done loading files
+
+!Creating index on customer_id...
+
+[+] Parsed SQL: 
+	SELECT *
+FROM `CUSTOMER`
+WHERE `CUSTOMER_ID` < 50
+
+[+] Validated SQL: 
+÷SELECT `customer`.`customer_id`, `customer`.`store_id`, `customer`.`first_name`, `customer`.`last_name`, `customer`.`email`, `customer`.`address_id`, `customer`.`activebool`, `customer`.`create_date`, `customer`.`last_update`, `customer`.`active`
+(FROM `FILM_DB`.`customer` AS `CUSTOMER`
+$WHERE `customer`.`customer_id` < 50
+
+[+] Converted SQL: 
+?rel#43:LogicalProject.NONE(input=LogicalFilter#41,inputs=0..9)
+
+[+] Physical SQL: 
+PIndexScan
+
+[+] Evaluating physical SQL
+*Evaluating PIndexScan for table: customer
+
+<($0, 50)
+==49
+
+Test 4 SFW passed :)
+
+ Loading file: film_category.csv
+Done writing file
+
+Loading file: country.csv
+Done writing file
+
+Loading file: address.csv
+Done writing file
+
+Loading file: city.csv
+Done writing file
+
+Loading file: film_actor.csv
+Done writing file
+
+Loading file: language.csv
+Done writing file
+
+Loading file: staff.csv
+Done writing file
+
+Loading file: film.csv
+Done writing file
+
+Loading file: store.csv
+Done writing file
+
+Loading file: inventory.csv
+Done writing file
+
+Loading file: rental.csv
+Done writing file
+
+Loading file: actor.csv
+Done writing file
+
+Loading file: payment.csv
+Done writing file
+
+Loading file: category.csv
+Done writing file
+
+Loading file: customer.csv
+Done writing file
+
+Done loading files
+
+!Creating index on customer_id...
+
+[+] Parsed SQL: 
+	SELECT *
+FROM `CUSTOMER`
+WHERE `CUSTOMER_ID` = 50
+
+[+] Validated SQL: 
+÷SELECT `customer`.`customer_id`, `customer`.`store_id`, `customer`.`first_name`, `customer`.`last_name`, `customer`.`email`, `customer`.`address_id`, `customer`.`activebool`, `customer`.`create_date`, `customer`.`last_update`, `customer`.`active`
+(FROM `FILM_DB`.`customer` AS `CUSTOMER`
+$WHERE `customer`.`customer_id` = 50
+
+[+] Converted SQL: 
+?rel#56:LogicalProject.NONE(input=LogicalFilter#54,inputs=0..9)
+
+[+] Physical SQL: 
+PIndexScan
+
+[+] Evaluating physical SQL
+*Evaluating PIndexScan for table: customer
+
+=($0, 50)
+==1
+
+Test 5 SFW passed :)
+
+ Loading file: film_category.csv
+Done writing file
+
+Loading file: country.csv
+Done writing file
+
+Loading file: address.csv
+Done writing file
+
+Loading file: city.csv
+Done writing file
+
+Loading file: film_actor.csv
+Done writing file
+
+Loading file: language.csv
+Done writing file
+
+Loading file: staff.csv
+Done writing file
+
+Loading file: film.csv
+Done writing file
+
+Loading file: store.csv
+Done writing file
+
+Loading file: inventory.csv
+Done writing file
+
+Loading file: rental.csv
+Done writing file
+
+Loading file: actor.csv
+Done writing file
+
+Loading file: payment.csv
+Done writing file
+
+Loading file: category.csv
+Done writing file
+
+Loading file: customer.csv
+Done writing file
+
+Done loading files
+Test passed :)
+
+	18 <==> 18
+
+	$Test test_tree_inorder_10 passed :)
+
+"Test test_tree_search_1 passed :)
+
+Starting search
+
+First: 18598 Second: 18602
+
+4(==)
+
+"Test test_tree_search_2 passed :)
+
+	6 <==> 6
+
+#Test test_tree_inorder_1 passed :)
+
+	6 <==> 6
+
+#Test test_tree_inorder_2 passed :)
+
+	8 <==> 8
+
+#Test test_tree_inorder_3 passed :)
+
+11 <==> 11
+
+#Test test_tree_inorder_4 passed :)
+
+	6 <==> 6
+
+#Test test_tree_inorder_5 passed :)
+
+	8 <==> 8
+
+#Test test_tree_inorder_6 passed :)
+
+12 <==> 12
+
+#Test test_tree_inorder_7 passed :)
+
+11 <==> 11
+
+#Test test_tree_inorder_8 passed :)
+
+14 <==> 14
+
+Test test_tree_bfs_1 passed :)
+
+Test test_tree_bfs_2 passed :)
+
+Test test_tree_bfs_3 passed :)
+
+Test test_tree_bfs_4 passed :)
+
+Test test_tree_bfs_5 passed :)
+
+Test test_tree_bfs_6 passed :)
+
+Test test_tree_bfs_7 passed :)
+
+Test test_tree_bfs_8 passed :)
+
+ $Test test_tree_preorder_1 passed :)
+
+!$Test test_tree_preorder_2 passed :)
+
+"$Test test_tree_preorder_3 passed :)
+
+#$Test test_tree_preorder_4 passed :)
+
+$$Test test_tree_preorder_5 passed :)
+
+%$Test test_tree_preorder_6 passed :)
+
+&$Test test_tree_preorder_7 passed :)
+
+'$Test test_tree_preorder_8 passed :)
+
+) Test test_tree_bfs_10 passed :)
+
+* Loading file: film_category.csv
+
+*Done writing file
+
+*
+
+*Loading file: country.csv
+
+*Done writing file
+
+*
+
+*Loading file: address.csv
+
+*Done writing file
+
+*
+
+*Loading file: city.csv
+
+*Done writing file
+
+*
+
+*Loading file: film_actor.csv
+
+*Done writing file
+
+*
+
+*Loading file: language.csv
+
+*Done writing file
+
+*
+
+*Loading file: staff.csv
+
+*Done writing file
+
+*
+
+*Loading file: film.csv
+
+*Done writing file
+
+*
+
+*Loading file: store.csv
+
+*Done writing file
+
+*
+
+*Loading file: inventory.csv
+
+*Done writing file
+
+*
+
+*Loading file: rental.csv
+
+*Done writing file
+
+*
+
+*Loading file: actor.csv
+
+*Done writing file
+
+*
+
+*Loading file: payment.csv
+
+*Done writing file
+
+*
+
+*Loading file: category.csv
+
+*Done writing file
+
+*
+
+*Loading file: customer.csv
+
+*Done writing file
+
+*
+
+*Done loading files
+
++%Test test_tree_preorder_10 passed :)

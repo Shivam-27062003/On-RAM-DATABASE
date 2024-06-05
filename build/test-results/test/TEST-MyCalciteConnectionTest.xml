@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MyCalciteConnectionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-06-05T06:39:52" hostname="toxic-HP-Pavilion-Laptop-15-eg0xxx" time="3.129">
+  <properties/>
+  <testcase name="testSFW_1" classname="MyCalciteConnectionTest" time="2.333"/>
+  <testcase name="testSFW_2" classname="MyCalciteConnectionTest" time="0.274"/>
+  <testcase name="testSFW_3" classname="MyCalciteConnectionTest" time="0.135"/>
+  <testcase name="testSFW_4" classname="MyCalciteConnectionTest" time="0.233"/>
+  <testcase name="testSFW_5" classname="MyCalciteConnectionTest" time="0.154"/>
+  <system-out><![CDATA[Loading file: film_category.csv
+Done writing file
+
+Loading file: country.csv
+Done writing file
+
+Loading file: address.csv
+Done writing file
+
+Loading file: city.csv
+Done writing file
+
+Loading file: film_actor.csv
+Done writing file
+
+Loading file: language.csv
+Done writing file
+
+Loading file: staff.csv
+Done writing file
+
+Loading file: film.csv
+Done writing file
+
+Loading file: store.csv
+Done writing file
+
+Loading file: inventory.csv
+Done writing file
+
+Loading file: rental.csv
+Done writing file
+
+Loading file: actor.csv
+Done writing file
+
+Loading file: payment.csv
+Done writing file
+
+Loading file: category.csv
+Done writing file
+
+Loading file: customer.csv
+Done writing file
+
+Done loading files
+
+Creating index on actor_id...
+
+[+] Parsed SQL: 
+SELECT *
+FROM `ACTOR`
+WHERE `ACTOR_ID` >= 100
+
+[+] Validated SQL: 
+SELECT `actor`.`actor_id`, `actor`.`first_name`, `actor`.`last_name`, `actor`.`last_update`
+FROM `FILM_DB`.`actor` AS `ACTOR`
+WHERE `actor`.`actor_id` >= 100
+
+[+] Converted SQL: 
+rel#4:LogicalProject.NONE(input=LogicalFilter#2,inputs=0..3)
+
+[+] Physical SQL: 
+PIndexScan
+
+[+] Evaluating physical SQL
+Evaluating PIndexScan for table: actor
+>=($0, 100)
+
+Test 1 SFW passed :)
+
+Loading file: film_category.csv
+Done writing file
+
+Loading file: country.csv
+Done writing file
+
+Loading file: address.csv
+Done writing file
+
+Loading file: city.csv
+Done writing file
+
+Loading file: film_actor.csv
+Done writing file
+
+Loading file: language.csv
+Done writing file
+
+Loading file: staff.csv
+Done writing file
+
+Loading file: film.csv
+Done writing file
+
+Loading file: store.csv
+Done writing file
+
+Loading file: inventory.csv
+Done writing file
+
+Loading file: rental.csv
+Done writing file
+
+Loading file: actor.csv
+Done writing file
+
+Loading file: payment.csv
+Done writing file
+
+Loading file: category.csv
+Done writing file
+
+Loading file: customer.csv
+Done writing file
+
+Done loading files
+
+Creating index on customer_id...
+
+[+] Parsed SQL: 
+SELECT *
+FROM `CUSTOMER`
+WHERE `CUSTOMER_ID` <= 50
+
+[+] Validated SQL: 
+SELECT `customer`.`customer_id`, `customer`.`store_id`, `customer`.`first_name`, `customer`.`last_name`, `customer`.`email`, `customer`.`address_id`, `customer`.`activebool`, `customer`.`create_date`, `customer`.`last_update`, `customer`.`active`
+FROM `FILM_DB`.`customer` AS `CUSTOMER`
+WHERE `customer`.`customer_id` <= 50
+
+[+] Converted SQL: 
+rel#17:LogicalProject.NONE(input=LogicalFilter#15,inputs=0..9)
+
+[+] Physical SQL: 
+PIndexScan
+
+[+] Evaluating physical SQL
+Evaluating PIndexScan for table: customer
+<=($0, 50)
+==50
+
+Test 2 SFW passed :)
+
+Loading file: film_category.csv
+Done writing file
+
+Loading file: country.csv
+Done writing file
+
+Loading file: address.csv
+Done writing file
+
+Loading file: city.csv
+Done writing file
+
+Loading file: film_actor.csv
+Done writing file
+
+Loading file: language.csv
+Done writing file
+
+Loading file: staff.csv
+Done writing file
+
+Loading file: film.csv
+Done writing file
+
+Loading file: store.csv
+Done writing file
+
+Loading file: inventory.csv
+Done writing file
+
+Loading file: rental.csv
+Done writing file
+
+Loading file: actor.csv
+Done writing file
+
+Loading file: payment.csv
+Done writing file
+
+Loading file: category.csv
+Done writing file
+
+Loading file: customer.csv
+Done writing file
+
+Done loading files
+
+Creating index on actor_id...
+
+[+] Parsed SQL: 
+SELECT *
+FROM `ACTOR`
+WHERE `ACTOR_ID` > 100
+
+[+] Validated SQL: 
+SELECT `actor`.`actor_id`, `actor`.`first_name`, `actor`.`last_name`, `actor`.`last_update`
+FROM `FILM_DB`.`actor` AS `ACTOR`
+WHERE `actor`.`actor_id` > 100
+
+[+] Converted SQL: 
+rel#30:LogicalProject.NONE(input=LogicalFilter#28,inputs=0..3)
+
+[+] Physical SQL: 
+PIndexScan
+
+[+] Evaluating physical SQL
+Evaluating PIndexScan for table: actor
+>($0, 100)
+
+Test 3 SFW passed :)
+
+Loading file: film_category.csv
+Done writing file
+
+Loading file: country.csv
+Done writing file
+
+Loading file: address.csv
+Done writing file
+
+Loading file: city.csv
+Done writing file
+
+Loading file: film_actor.csv
+Done writing file
+
+Loading file: language.csv
+Done writing file
+
+Loading file: staff.csv
+Done writing file
+
+Loading file: film.csv
+Done writing file
+
+Loading file: store.csv
+Done writing file
+
+Loading file: inventory.csv
+Done writing file
+
+Loading file: rental.csv
+Done writing file
+
+Loading file: actor.csv
+Done writing file
+
+Loading file: payment.csv
+Done writing file
+
+Loading file: category.csv
+Done writing file
+
+Loading file: customer.csv
+Done writing file
+
+Done loading files
+
+Creating index on customer_id...
+
+[+] Parsed SQL: 
+SELECT *
+FROM `CUSTOMER`
+WHERE `CUSTOMER_ID` < 50
+
+[+] Validated SQL: 
+SELECT `customer`.`customer_id`, `customer`.`store_id`, `customer`.`first_name`, `customer`.`last_name`, `customer`.`email`, `customer`.`address_id`, `customer`.`activebool`, `customer`.`create_date`, `customer`.`last_update`, `customer`.`active`
+FROM `FILM_DB`.`customer` AS `CUSTOMER`
+WHERE `customer`.`customer_id` < 50
+
+[+] Converted SQL: 
+rel#43:LogicalProject.NONE(input=LogicalFilter#41,inputs=0..9)
+
+[+] Physical SQL: 
+PIndexScan
+
+[+] Evaluating physical SQL
+Evaluating PIndexScan for table: customer
+<($0, 50)
+==49
+
+Test 4 SFW passed :)
+
+Loading file: film_category.csv
+Done writing file
+
+Loading file: country.csv
+Done writing file
+
+Loading file: address.csv
+Done writing file
+
+Loading file: city.csv
+Done writing file
+
+Loading file: film_actor.csv
+Done writing file
+
+Loading file: language.csv
+Done writing file
+
+Loading file: staff.csv
+Done writing file
+
+Loading file: film.csv
+Done writing file
+
+Loading file: store.csv
+Done writing file
+
+Loading file: inventory.csv
+Done writing file
+
+Loading file: rental.csv
+Done writing file
+
+Loading file: actor.csv
+Done writing file
+
+Loading file: payment.csv
+Done writing file
+
+Loading file: category.csv
+Done writing file
+
+Loading file: customer.csv
+Done writing file
+
+Done loading files
+
+Creating index on customer_id...
+
+[+] Parsed SQL: 
+SELECT *
+FROM `CUSTOMER`
+WHERE `CUSTOMER_ID` = 50
+
+[+] Validated SQL: 
+SELECT `customer`.`customer_id`, `customer`.`store_id`, `customer`.`first_name`, `customer`.`last_name`, `customer`.`email`, `customer`.`address_id`, `customer`.`activebool`, `customer`.`create_date`, `customer`.`last_update`, `customer`.`active`
+FROM `FILM_DB`.`customer` AS `CUSTOMER`
+WHERE `customer`.`customer_id` = 50
+
+[+] Converted SQL: 
+rel#56:LogicalProject.NONE(input=LogicalFilter#54,inputs=0..9)
+
+[+] Physical SQL: 
+PIndexScan
+
+[+] Evaluating physical SQL
+Evaluating PIndexScan for table: customer
+=($0, 50)
+==1
+
+Test 5 SFW passed :)
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
