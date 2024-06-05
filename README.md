@@ -6,11 +6,13 @@
   
 # Requirements for Test
 
-* JAVA verion >= 11
+* JAVA version >= 11
 * Graddle Installed
 * Clone Repository
 
-# How to Run
+# How to Run ?? 
 
 * Write query in test.java file
-* Run ./gradlew test --info 
+* Run ./gradlew test --info
+
+# Author - SHIVAM SINGH
