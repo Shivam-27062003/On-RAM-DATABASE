@@ -1,4 +1,4 @@
-# COL362/COL632 Assignment_3
+# ON-RAM DATABASE
 
 In memory database system for quering CSV files. 
 
