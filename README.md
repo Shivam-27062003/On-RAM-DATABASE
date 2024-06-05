@@ -12,7 +12,7 @@
 
 # How to Run ?? 
 
-* Write query in test.java file
+* Write query in in/ac/iitd/src/main/java/MyCalciteConnection.java file
 * Run ./gradlew test --info
 
-# Author - SHIVAM SINGH
+# Created & Managed by SHIVAM SINGH
